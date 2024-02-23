@@ -17,7 +17,7 @@
         @csrf 
         <div class="form-group">
             <label for="date">Data da Reserva:</label>
-            <input type="date" class="form-control" id="data" name="data" required>
+            <input type="date" class="form-control" id="data" name="data" min="{{ date("Y-m-d") }}" required>
         </div><br> 
         <div class="form-group">
             <label for="title">Horário da Reserva:</label><br>
